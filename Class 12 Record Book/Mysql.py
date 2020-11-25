@@ -1,0 +1,10 @@
+import mysql.connector as sql
+conn=sql.connect(host="localhost",user="root",password="bamgm146")
+cur=conn.cursor()
+cur.execute('create database Testing')
+cur.execute('use testing')
+cur.execute('create table Pokemon(Poke varchar(20),Mon varchar(20))')
+cur.execute('insert into Pokemon values("Pica?","Pica")')
+cur.execute('select * from Pokemon')
+print(cur.fetchall())
+conn.close()

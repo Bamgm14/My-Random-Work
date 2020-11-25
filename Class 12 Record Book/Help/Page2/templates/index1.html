@@ -1,0 +1,17 @@
+<!doctype>
+<html>
+    <body>
+        <form method=POST>
+			{% csrf_token %}
+            <input type="text" name="name">
+			<input type="text" name="anime">
+			<select name="cars">
+				<option value="volvo">Volvo XC90</option>
+				<option value="saab">Saab 95</option>
+				<option value="mercedes">Mercedes SLK</option>
+				<option value="audi">Audi TT</option>
+			</select>
+            <input type="submit" name="Submit">
+        </form>
+    </body>
+</html>
