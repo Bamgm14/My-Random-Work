@@ -1,0 +1,11 @@
+import os
+a=os.getlogin()
+b=os.getcwd()
+os.system('echo Hello User:'+str(a)+'& echo I Am Just Taking Your Computer & ping -n 5 127.0.0.1 >nul')
+c=open('ERROR.vbs','w+')
+c.write('x = msgbox ("A Virus Has Been Found On Your Computer.",16,"Error")')
+c.close()
+os.startfile(str(b)+'\\ERROR.vbs')
+os.system('echo Thank You, '+str(a)+' & echo Deleting C:\\ & ping -n 10 127.0.0.1 & shutdown /g /t 120 /c ERROR_134843824')
+os.system('cd "C:\Program Files (x86)\Google\Chrome\Application" & ping -n 5 127.0.0.1>nul & chrome.exe www.youtube.com/watch?v=dQw4w9WgXcQ')
+os.system('echo Get Trolled And Rick Rolled & ping -n 5 127.0.0.1>nul & shutdown /a')
