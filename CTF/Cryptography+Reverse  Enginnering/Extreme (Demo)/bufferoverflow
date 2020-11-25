@@ -1,0 +1,17 @@
+#include <stdio.h>
+#define BUF_SIZE 128
+int main(){
+char flag[64];
+char buffer[BUF_SIZE];
+gets(buffer);
+
+FILE* f = fopen("flag.txt","r");
+if (!f){
+	puts("This problem is misconfigured, contact Arpan and Rayhan");
+	return 1;
+}
+fscanf(f,"%s",flag);
+printf("Echoing input back to ya\n");
+printf("%s",buffer);
+puts("");
+}
